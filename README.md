@@ -25,3 +25,5 @@ streamlit run app.py
 Keep `app.py`, the three `.pkl` artifacts, and `requirements.txt` together in the deployed app root. The model artifacts were saved with `scikit-learn==1.6.1`, so the dependency is pinned to that version for consistent loading and prediction behavior.
 
 The app includes manual forecasting, CSV batch scoring, input validation, sample/template downloads, and the required input schema for deployment review.
+
+On Streamlit Community Cloud, deploy with Python 3.12 from Advanced settings. Python 3.14 is too new for the pinned model dependency stack.
